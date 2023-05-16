@@ -1,0 +1,58 @@
+
+<div class="container">
+<form [formGroup]="form">
+
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name">
+    </div>
+    <div>
+      <label for="kra">KRA:</label>
+      <input type="text" id="kra" formControlName="kra">
+    </div>
+<div>
+    <label>Status:</label>
+    <div formControlName="status">
+      <label>
+        <input type="radio" value="active" formControlName="status"> Active
+      </label>
+      <label>
+        <input type="radio" value="inactive" formControlName="status"> Inactive
+      </label>
+    </div>
+  </div>
+  </form>
+  <div>
+    <button (click)="onClose()" class="btn btn-danger">Close</button>
+    <button (click)="onSave()" class="btn btn-success">Save</button>
+    <button (click)=" saveChanges()" class="btn btn-warning" > saveChanges</button>
+   
+  </div>
+  </div>
+&nbsp;
+
+<table class="table table-striped table-light">
+    <thead>
+      <tr>
+        <th >Name</th>
+        <th>KRA</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data">
+        <td>{{ d.name }}</td>
+        <td>{{ d.kra }}</td>
+        <td>{{ d.status }}</td>
+        <td>
+          <a href="#" (click)="editItem(d)" >
+            <i class="fas fa-edit"></i>
+          </a>
+          <a href="#" (click)="deleteItem(d)">
+            <i class="fas fa-trash"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>  

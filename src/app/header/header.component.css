@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 4px black;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="radio"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  margin-right:5px;
+  cursor: pointer;
+}
+
+
+table{
+    
+    border-collapse: collapse;
+  width: 95%;
+
+  margin: 0 auto;
+  box-shadow: 0 2px 7px black;
+  }
+    
+  
+  i {
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  
+  .fa-edit {
+    color: #4CAF50;
+    margin-right: 10px;
+  }
+  
+  .fa-trash {
+    color: #f44336;
+  }

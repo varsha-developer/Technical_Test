@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "name": "varsha",
+      "kra": "test1",
+      "status": "active",
+      "id": 1
+    },
+    {
+      "name": "grade2",
+      "kra": "test2",
+      "status": "Inactive",
+      "id": 2
+    },
+    {
+      "name": "grade3",
+      "kra": "test3",
+      "status": "Inactive",
+      "id": 3
+    },
+    {
+      "name": "grade4",
+      "kra": "test4",
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "name": "varsha",
+      "kra": "test5",
+      "status": "Active",
+      "id": 5
+    },
+    {
+      "name": "grade7",
+      "kra": "test7",
+      "status": "active",
+      "id": 6
+    }
+  ]
+}
